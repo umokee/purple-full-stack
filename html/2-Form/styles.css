@@ -22,7 +22,7 @@ input::placeholder {
   font-style: italic;
   color: #999999;
 }
-input:active {
+input:focus {
   font-weight: 550;
   background-color: #ffffff;
   border-color: #f5f5f5;

@@ -1,0 +1,33 @@
+* {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+body {
+  background-color: #374151;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header input {
+  background-color: #1f293760;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+footer > p {
+  opacity: 60%;
+}
+
+.hero-text {
+  font-size: 20px;
+}
+
+.ghost-text {
+  font-size: 14px;
+  opacity: 60%;
+}
