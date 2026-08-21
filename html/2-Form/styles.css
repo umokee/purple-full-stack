@@ -1,0 +1,54 @@
+body {
+  font-style: "Open Sans", sans-serif;
+  background-color: #f39494;
+}
+
+main {
+  background-color: #fffefe;
+}
+
+h1 {
+  font-size: 36px;
+  color: #333333;
+}
+
+input {
+  font-size: 16px;
+  color: #333333;
+  background-color: #f5f5f5;
+}
+input::placeholder {
+  font-size: 16px;
+  font-style: italic;
+  color: #999999;
+}
+input:active {
+  font-weight: 550;
+  background-color: #ffffff;
+  border-color: #f5f5f5;
+}
+
+.register-question-container {
+  font-size: 18px;
+}
+
+.register-question,
+.permission-label {
+  color: #666666;
+}
+
+.login-link,
+.terms-of-use-link {
+  color: #089fe0;
+}
+
+.register-button {
+  background-color: #089fe0;
+  border-color: #ffffff;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.permission-container {
+  font-size: 14px;
+}
