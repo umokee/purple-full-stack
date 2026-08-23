@@ -1,33 +1,89 @@
 * {
   font-family: "Roboto", sans-serif;
-  color: #fff;
 }
 
 body {
+  margin: 0;
+  box-sizing: border-box;
   background-color: #374151;
 }
 
-header a {
+.header {
+  margin: 70px 180px;
+}
+.header__main {
+  color: #ffffff;
   text-decoration: none;
+  font-size: 18px;
 }
 
-header input {
-  background-color: #1f293760;
+.navigation {
+  margin-left: 75px;
+}
+.navigation__list,
+a {
+  color: #ffffff;
+  text-decoration: none;
+  list-style: none;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
 }
 
-h1 {
-  font-size: 24px;
+.search-field {
+  color: #ffffff;
+  background-color: #1f293799;
+  border: 1px;
+  font-size: 16px;
+  padding: 12px 8px;
+  border-radius: 100px;
+}
+.search-field::placeholder {
+  color: #ffffff;
+  font-size: 16px;
 }
 
-footer > p {
+.section {
+  color: #ffffff;
+}
+.section__text--primary {
+  font-size: 20px;
+  margin-top: 70px;
+}
+.section__text {
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.footer {
+  padding: 70px 0;
+}
+.footer__text {
+  color: #ffffff;
+  opacity: 60%;
+  font-size: 16px;
+}
+
+.meta-data {
+  color: #ffffff;
+  font-size: 14px;
   opacity: 60%;
 }
 
-.hero-text {
-  font-size: 20px;
+.title {
+  color: #ffffff;
+  font-size: 24px;
+  margin-top: 10px;
 }
 
-.ghost-text {
+.person-info {
+  color: #ffffff;
+  margin: 30px 0;
+}
+.person-info__name {
+  font-size: 16px;
+}
+.person-info__spec {
   font-size: 14px;
   opacity: 60%;
 }
