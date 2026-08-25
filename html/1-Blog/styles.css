@@ -1,18 +1,36 @@
-* {
+:root {
   font-family: "Roboto", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  box-sizing: border-box;
   background-color: #374151;
+  color: #ffffff;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .header {
   margin: 70px 180px;
 }
 .header__main {
-  color: #ffffff;
   text-decoration: none;
   font-size: 18px;
 }
@@ -22,8 +40,6 @@ body {
 }
 .navigation__list,
 a {
-  color: #ffffff;
-  text-decoration: none;
   list-style: none;
   font-size: 16px;
   padding: 0;
@@ -31,7 +47,6 @@ a {
 }
 
 .search-field {
-  color: #ffffff;
   background-color: #1f293799;
   border: 1px;
   font-size: 16px;
@@ -39,12 +54,10 @@ a {
   border-radius: 100px;
 }
 .search-field::placeholder {
-  color: #ffffff;
   font-size: 16px;
 }
 
 .section {
-  color: #ffffff;
 }
 .section__text--primary {
   font-size: 20px;
@@ -59,25 +72,21 @@ a {
   padding: 70px 0;
 }
 .footer__text {
-  color: #ffffff;
   opacity: 60%;
   font-size: 16px;
 }
 
 .meta-data {
-  color: #ffffff;
   font-size: 14px;
   opacity: 60%;
 }
 
 .title {
-  color: #ffffff;
   font-size: 24px;
   margin-top: 10px;
 }
 
 .person-info {
-  color: #ffffff;
   margin: 30px 0;
 }
 .person-info__name {
@@ -86,4 +95,8 @@ a {
 .person-info__spec {
   font-size: 14px;
   opacity: 60%;
+}
+
+.link {
+  text-decoration: underline;
 }
