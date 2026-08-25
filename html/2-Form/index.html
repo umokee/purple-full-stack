@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Регистрация</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <main>
       <h1>Регистрация</h1>
-      <div>
-        Уже есть аккаунт?
-        <a href="#">Войти</a>
+      <div class="register-question-container">
+        <span class="register-question">Уже есть аккаунт?</span>
+        <a href="#" class="login-link">Войти</a>
       </div>
       <form>
         <input type="text" id="username" placeholder="Логин" />
@@ -19,11 +20,11 @@
           <input type="text" id="surname" placeholder="Фамилия" />
         </div>
         <input type="email" id="email" placeholder="E-mail" />
-        <button type="submit">Зарегистрироваться</button>
-        <div>
+        <button type="submit" class="register-button">Зарегистрироваться</button>
+        <div class="permission-container">
           <input type="checkbox" id="permission" />
-          <label for="permission">Я прочитал и принимаю</label>
-          <a href="#">Условия использования</a>
+          <label for="permission" class="permission-label">Я прочитал и принимаю</label>
+          <a href="#" class="terms-of-use-link">Условия использования</a>
         </div>
       </form>
     </main>
