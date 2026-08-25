@@ -8,23 +8,26 @@
   </head>
   <body>
     <main>
-      <h1>Регистрация</h1>
-      <div class="register-question-container">
-        <span class="register-question">Уже есть аккаунт?</span>
-        <a href="#" class="login-link">Войти</a>
+      <div class="header">
+        <h1 class="header__title">Регистрация</h1>
+        <span class="header__question">Уже есть аккаунт?</span>
+        <a href="#" class="header__link">Войти</a>
       </div>
-      <form>
-        <input type="text" id="username" placeholder="Логин" />
-        <div>
-          <input type="text" id="firstname" placeholder="Имя" />
-          <input type="text" id="surname" placeholder="Фамилия" />
+      <form class="form">
+        <input type="text" id="username" placeholder="Логин" class="field" />
+        <div class="double-field">
+          <input type="text" id="firstname" placeholder="Имя" class="field" />
+          <input type="text" id="surname" placeholder="Фамилия" class="field" />
         </div>
-        <input type="email" id="email" placeholder="E-mail" />
-        <button type="submit" class="register-button">Зарегистрироваться</button>
-        <div class="permission-container">
-          <input type="checkbox" id="permission" />
-          <label for="permission" class="permission-label">Я прочитал и принимаю</label>
-          <a href="#" class="terms-of-use-link">Условия использования</a>
+        <input type="email" id="email" placeholder="E-mail" class="field" />
+        <button type="submit" class="button">
+          Зарегистрироваться
+          <img src="./icons/arrow.svg" alt="Иконка стрелки">
+        </button>
+        <div>
+          <input type="checkbox" id="permission" class="permission__checkbox" />
+          <label for="permission" class="permission__text">Я прочитал и принимаю</label>
+          <a href="#" class="permission__link">Условия использования</a>
         </div>
       </form>
     </main>
