@@ -67,12 +67,15 @@ main {
   border-radius: 5px;
   font-size: 18px;
   padding: 9px 24px;
+  width: 100%;
 }
 .button img {
   position: absolute;
   width: 24px;
   height: 24px;
   right: 22px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .field {
@@ -80,6 +83,7 @@ main {
   border: 1px solid #ffffff;
   border-radius: 5px;
   padding: 9px 11px;
+  width: 100%;
 }
 .field:hover {
   background-color: #ffffff;
@@ -101,6 +105,7 @@ main {
   gap: 1px;
 }
 .double-field .field {
+  flex: 1;
   min-width: 0;
 }
 .double-field .field:first-child {
