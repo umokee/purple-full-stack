@@ -1,54 +1,131 @@
-body {
+:root {
   font-family: "Open Sans", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+input,
+button {
+  font-family: inherit;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #f39494;
+  background-image: linear-gradient(#ffa5a5, #ffffff00), linear-gradient(#fdc5c5, #f298de00);
+  margin: 0;
+  height: 100vh;
+  width: 100%;
 }
 
 main {
   background-color: #fffefe;
+  border-radius: 10px;
+  width: 570px;
+  min-height: 580px;
+  padding: 70px 95px 90px;
+  box-shadow: 0px 4px 4px 0px #00000040;
 }
 
-h1 {
+.header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.header__title {
+  color: #333333;
   font-size: 36px;
-  color: #333333;
+  margin: 0;
+}
+.header__question {
+  color: #666666;
+  font-size: 18px;
+  margin-right: 6px;
+}
+.header__link {
+  color: #089fe0;
+  font-size: 18px;
 }
 
-input {
-  font-size: 16px;
-  color: #333333;
-  background-color: #f5f5f5;
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
 }
-input::placeholder {
-  font-size: 16px;
+
+.button {
+  text-align: center;
+  position: relative;
+  color: #ffffff;
+  background-color: #089fe0;
+  border: 3px solid #ffffff;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 9px 24px;
+  width: 100%;
+}
+.button img {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.field {
+  background-color: #f5f5f5;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  padding: 9px 11px;
+  width: 100%;
+}
+.field:hover {
+  background-color: #ffffff;
+  border: 1px solid #f5f5f5;
+}
+.field:focus {
+  outline: none;
+  background-color: #ffffff;
+  border: 1px solid #f5f5f5;
+}
+.field::placeholder {
   font-style: italic;
   color: #999999;
-}
-input:focus {
-  font-weight: 550;
-  background-color: #ffffff;
-  border-color: #f5f5f5;
+  font-size: 16px;
 }
 
-.register-question-container {
-  font-size: 18px;
+.double-field {
+  display: flex;
+  gap: 1px;
+}
+.double-field .field {
+  flex: 1;
+  min-width: 0;
+}
+.double-field .field:first-child {
+  border-radius: 5px 0 0 5px;
+}
+.double-field .field:last-child {
+  border-radius: 0 5px 5px 0;
 }
 
-.register-question,
-.permission-label {
+.permission__checkbox {
+  width: 16px;
+  height: 16px;
+  accent-color: #089fe0;
+}
+.permission__text {
   color: #666666;
+  font-size: 14px;
 }
-
-.login-link,
-.terms-of-use-link {
+.permission__link {
+  text-decoration: none;
   color: #089fe0;
-}
-
-.register-button {
-  background-color: #089fe0;
-  border-color: #ffffff;
-  color: #ffffff;
-  font-size: 18px;
-}
-
-.permission-container {
   font-size: 14px;
 }
