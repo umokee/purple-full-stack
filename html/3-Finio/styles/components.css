@@ -1,0 +1,122 @@
+/* Button */
+.button {
+  white-space: nowrap;
+  text-align: center;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 47px;
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 140%;
+  padding: 12px 32px;
+}
+.button--full {
+  width: 100%;
+}
+.button--light {
+  background-color: #ffffff;
+  color: var(--color-primary);
+}
+
+/* Tariff Card */
+.tariff-card {
+  /* Базовые цвета */
+  --card-bg: #ffffff;
+  --card-shadow: 0px 0px 32px 0px #4e5d7c29;
+  --card-text-primary: #000000;
+  --card-text-secondary: #4e5d7c;
+  --card-text-muted: #4e5d7c80;
+
+  background-color: var(--card-bg);
+  box-shadow: var(--card-shadow);
+  border-radius: 8px;
+  padding: 48px 40px;
+}
+
+.tariff-card--primary {
+  --card-bg: var(--color-primary);
+  --card-shadow: 0px 0px 32px 0px #4e5d7c52;
+  --card-text-primary: #ffffff;
+  --card-text-secondary: #ffffff;
+  --card-text-muted: #ffffff99;
+}
+
+.tariff-card__top {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.tariff-card__top:not(:has(.tariff-card__badge)) {
+  padding-top: 44px;
+}
+
+.tariff-card__prices {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin-bottom: 16px;
+}
+
+.tariff-card__row {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: subgrid;
+  align-items: center;
+  padding: 16px 0;
+}
+.tariff-card__row--bordered {
+  border-top: 1px solid #4e5d7c14;
+  border-bottom: 1px solid #4e5d7c14;
+}
+
+.tariff-card__label {
+  color: var(--card-text-secondary);
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 120%;
+}
+
+.tariff-card__value {
+  justify-self: start;
+  color: var(--card-text-secondary);
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 120%;
+  padding: 8px 16px;
+}
+.tariff-card__value--filled {
+  background-color: #ffc736;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.tariff-card__badge {
+  align-self: flex-start;
+  background-color: #1abc9c;
+  color: #ffffff;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 140%;
+  padding: 4px 16px;
+}
+.tariff-card__badge-value {
+  font-weight: 800;
+}
+
+.tariff-card__title {
+  color: var(--card-text-primary);
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 120%;
+}
+
+.tariff-card__paragraph {
+  color: var(--card-text-muted);
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 140%;
+}

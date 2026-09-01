@@ -1,0 +1,39 @@
+.section__wrapper {
+  max-width: var(--layout-width);
+  margin: 0 auto;
+  padding: 0 24px 80px;
+}
+
+.section__title {
+  text-align: center;
+  color: var(var(--color-text));
+  font-size: clamp(36px, calc(33.09px + 0.78vw), 48px);
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 24px;
+}
+
+.section__paragraph {
+  text-align: center;
+  color: #4e5d7c80;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 140%;
+  margin-bottom: clamp(32px, calc(30.06px + 0.52vw), 40px);
+}
+
+.tariffs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));
+  gap: 24px;
+}
+
+@media (max-width: 480px) {
+  .section__title {
+    text-align: start;
+  }
+
+  .section__paragraph {
+    text-align: start;
+  }
+}

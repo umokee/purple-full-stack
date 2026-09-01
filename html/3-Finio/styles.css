@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #ffffff;
+  font-weight: 500;
+  margin: 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(24px, 1fr)
+    [wide-start] minmax(0, 100px)
+    [content-start] minmax(0, 1160px) [content-end]
+    minmax(0, 100px) [wide-end]
+    minmax(24px, 1fr) [full-end];
+}
+
+.section {
+  display: grid;
+  grid-column: content-start / content-end;
+  margin: 0 clamp(24px, 20vw, 382px) 80px;
+}
+
+.section__title {
+  grid-area: title;
+  text-align: center;
+  color: #000000;
+  font-weight: 600;
+  font-size: 40px;
+  font-size: 40px;
+  line-height: 120%;
+}
+
+.section__text {
+  grid-area: text;
+  text-align: center;
+  color: #4e5d7c80;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 140%;
+  margin: 0 0 40px 0;
+}
+
+.card {
+  background-color: green;
+}
+.card:nth-child(3) {
+  grid-area: card1;
+}
+.card:nth-child(2) {
+  grid-area: card2;
+}
+.card:nth-child(1) {
+  grid-area: card3;
+}
+
+@media (max-width: 375px) {
+  .section__title,
+  .section__text {
+    text-align: start;
+  }
+}
